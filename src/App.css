@@ -168,13 +168,13 @@ h1, h2, h3, h4, p {
   color: lightgreen;
   border: 1px solid lightgrey;
   border-radius: 10px;
-  width: 280px;
+  width: 295px;
 }
 
 /* Typing effect from: https://codepen.io/denic/pen/GRoOxbM*/
 
 .typing1 {
-  width: 12ch;
+  width: 21ch;
   animation: typing 2s steps(22), blink .5s step-end 5 alternate forwards;
   white-space: nowrap;
   overflow: hidden;
@@ -183,7 +183,7 @@ h1, h2, h3, h4, p {
 }
 
 .typing2 {
-  width: 23ch;
+  width: 25ch;
   animation: typing 2s steps(22) 2.5s forwards, blink .5s step-end infinite alternate;
   visibility: hidden;
   white-space: nowrap;

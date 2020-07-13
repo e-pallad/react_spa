@@ -4,10 +4,10 @@ class Contact extends Component {
     render() {
         return (
             <div className="condiv">
-            <h1 className="subtopic">Contact Me</h1>
-            <h3>Email  :   naafi96@gmail.com</h3>
-            <h3>Instagram   :   @iam_naafi</h3>
-            <Social />
+              <h1 className="subtopic">Schreib mir:</h1>
+              <h3>Email: service@pp&#8208;itservices.de</h3>
+              <h3>Instagram: <a href="https://Instagram.com/trvl_sct" target="_blank" rel="noopener noreferrer" style={{color: '#000'}}>@trvl_sct</a></h3>
+              <Social />
             </div>
             )
         }

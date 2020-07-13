@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import profilepic from '../img/IMG_4445.jpg';
+import profilepic from '../img/20180912.jpg';
 import Social from '../components/Social';
 
 class Home extends Component {
@@ -9,11 +9,11 @@ class Home extends Component {
                 <img src={profilepic} className="profilepic" alt="Hello it's me"></img>
                 <div className="codeBox">
                   <div>
-                    <h2 className="typing1">Hi, I'm Eric</h2>
+                    <h2 className="typing1">Hallo, ich heiße Eric</h2>
                   </div>
                   <br />
                   <div>
-                    <h2 className="typing2">And I'm a web developer</h2>
+                    <h2 className="typing2">und bin ein Webdeveloper.</h2>
                   </div>
                 </div>
 
