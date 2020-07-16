@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import profilepic from '../img/20180912.jpg';
+import Profilepic from '../img/20180912.jpg';
 import Social from '../components/Social';
+import '../home.css'
 
 class Home extends Component {
     render() {
         return (
             <div className="condiv home">
-                <img src={profilepic} className="profilepic" alt="Hello it's me"></img>
+                <img src={Profilepic} className="profilepic" alt="Das bin ich"></img>
                 <div className="codeBox">
-                  <div>
-                    <h2 className="typing1">Hallo, ich heiße Eric</h2>
-                  </div>
-                  <br />
-                  <div>
-                    <h2 className="typing2">und bin ein Webdeveloper.</h2>
-                  </div>
+
+                    <p>
+                      <span className="typing1" style={{display:'inline-block'}}>Hallo, ich heiße Eric</span>
+                      <br />
+                      <span className="typing2" style={{display:'inline-block'}}>und ich bin ein Webdeveloper.</span>
+                    </p>
+
                 </div>
 
                 <Social />

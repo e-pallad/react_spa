@@ -1,0 +1,41 @@
+.codeBox {
+  background-color: #000;
+  color: lightgreen;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  min-width: 360px;
+}
+
+/* Typing effect from: https://codepen.io/denic/pen/GRoOxbM*/
+.typing1 {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end 5 alternate forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid;
+  font-family: monospace;
+}
+
+.typing2 {
+  width: 29ch;
+  animation: typing 2s steps(22) 2.5s forwards, blink .5s step-end infinite alternate;
+  visibility: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 10px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: lightgreen; }
+}

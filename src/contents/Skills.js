@@ -1,23 +1,36 @@
 
 import React, { Component } from 'react'
+import '../skill.css'
+
+let skillList = [
+  {"skillName":"HTML", "skillLevel":"expert"},
+  {"skillName":"CSS", "skillLevel":"advanced"},
+  {"skillName":"PHP", "skillLevel":"advanced"},
+  {"skillName":"JS", "skillLevel":"intermediate"},
+  {"skillName":"REACT.JS", "skillLevel":"basic"}
+]
+
+const Skill = ({skillName, skillLevel}) => {
+  return (
+    <div
+    className={"bar front " + skillLevel}
+    data-skill={skillName}>
+    </div>
+  )
+}
 
 class Skills extends Component {
-  constructor(props)
-  {
-    super(props);
-    this.state={
-      'myskills':['HTML','CSS','JS','PHP','REACT JS']
-    };
-  }
   render() {
     return (
       <div className="condiv skills">
-        <h1 className="subtopic">My Skills</h1>
-        <ul>
-          {this.state.myskills.map((value)=>{
-            return <li>{value}</li>
-          })}
-        </ul>
+        <h2 className="subtopic">My Skills</h2>
+        {skillList.map(
+          (skill, i) =>
+            <Skill
+              key={i}
+              skillName={skill.skillName}
+              skillLevel ={skill.skillLevel}/>
+        )}
       </div>
     )
   }

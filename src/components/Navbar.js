@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navitem from './Navitem';
+import Logo from '../img/logo.png'
 
 class Navbar extends Component {
   constructor(props) {
@@ -19,6 +20,11 @@ class Navbar extends Component {
   render() {
     return (
       <nav>
+        <div className="mobileCenter">
+        <a href="/">
+          <img src={Logo} className="mylogo" alt="Das ist mein Logo"></img>
+        </a>
+        </div>
         <ul>
           <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
           <Navitem item="About" tolink="/about"  activec={this.activeitem}></Navitem>
